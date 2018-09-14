@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RequestAndDisplay</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_car_detail">CarDetail</string>
+    <string name="status_label">Status</string>
+    <string name="transmission">Transmission</string>
+    <string name="fuel_type">Fuel Type</string>
+    <string name="drive_type">Drive Type</string>
+    <string name="door_count">Door Count</string>
+    <string name="vendor">Vendor</string>
+</resources>

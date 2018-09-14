@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.brianmccabe.requestanddisplay.ui.activity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/car_details"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/details_from"
+            android:layout_width="wrap_content"
+            android:layout_height="70sp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:paddingLeft="5sp"
+            android:paddingStart="5sp">
+
+            <TextView
+                android:id="@+id/from_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FROM:"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/location_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/from_label"
+                android:text="Las Vegas - Airport"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/date_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_from"
+                android:text="2014-09-22T10:00:00Z"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/details_to"
+            android:layout_width="wrap_content"
+            android:layout_height="70sp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:paddingLeft="5sp"
+            android:paddingStart="5sp">
+
+            <TextView
+                android:id="@+id/to_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TO:"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/location_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/to_label"
+                android:text="Las Vegas - Airport"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/date_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_to"
+                android:text="2014-10-06T10:00:00Z"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

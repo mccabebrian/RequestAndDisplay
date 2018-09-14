@@ -1,0 +1,99 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/constraintLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="com.brianmccabe.requestanddisplay.ui.fragment.CarouselFragment">
+    <TextView
+        android:id="@+id/car_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Chrysler 300 or similar"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:id="@+id/car_section"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="60sp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/car_image"
+            android:layout_width="240sp"
+            android:layout_height="240sp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/car"/>
+
+        <RelativeLayout
+            android:layout_width="240sp"
+            android:layout_height="60sp"
+            android:layout_below="@+id/car_image"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/price_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAD "
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="878.98"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/price_currency"/>
+
+            <TextView
+                android:id="@+id/passenger_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_toRightOf="@id/price_value"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30sp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/passenger_icon"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_toRightOf="@id/passenger_number"
+                android:layout_marginLeft="10sp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/people"/>
+
+            <TextView
+                android:id="@+id/luggage_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_toRightOf="@id/passenger_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20sp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/luggage_icon"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_toRightOf="@id/luggage_number"
+                android:layout_marginLeft="10sp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/luggage"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

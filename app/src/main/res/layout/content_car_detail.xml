@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.brianmccabe.requestanddisplay.ui.activity.CarDetail"
+    tools:showIn="@layout/activity_car_detail">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginStart="5sp">
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/car"/>
+
+        <TextView
+            android:id="@+id/status_label"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_image"
+            android:text="@string/status_label"
+            />
+
+        <TextView
+            android:id="@+id/status_value"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_image"
+            android:layout_toRightOf="@id/status_label"
+            android:layout_toEndOf="@id/status_label"
+            />
+
+        <TextView
+            android:id="@+id/transmission_label"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status_label"
+            android:text="@string/transmission"
+            />
+
+        <TextView
+            android:id="@+id/transmission_value"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status_label"
+            android:layout_toRightOf="@id/transmission_label"
+            android:layout_toEndOf="@id/transmission_label"
+            />
+
+        <TextView
+            android:id="@+id/fueltype_label"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transmission_label"
+            android:text="@string/fuel_type"
+            />
+
+        <TextView
+            android:id="@+id/fueltype_value"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transmission_value"
+            android:layout_toRightOf="@id/fueltype_label"
+            android:layout_toEndOf="@id/fueltype_label"
+            />
+
+        <TextView
+            android:id="@+id/driveType_label"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fueltype_label"
+            android:text="@string/drive_type"
+            />
+
+        <TextView
+            android:id="@+id/driveType_value"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fueltype_value"
+            android:layout_toRightOf="@id/driveType_label"
+            android:layout_toEndOf="@id/driveType_label"
+            />
+
+        <TextView
+            android:id="@+id/doorCount_label"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driveType_value"
+            android:text="@string/door_count"
+            />
+
+        <TextView
+            android:id="@+id/doorCount_value"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driveType_label"
+            android:layout_toRightOf="@id/doorCount_label"
+            android:layout_toEndOf="@id/doorCount_label"
+            />
+
+
+        <TextView
+            android:id="@+id/vendor_label"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doorCount_label"
+            android:text="@string/vendor"
+            />
+
+        <TextView
+            android:id="@+id/vendor_value"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doorCount_value"
+            android:layout_toRightOf="@id/vendor_label"
+            android:layout_toEndOf="@id/vendor_label"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
